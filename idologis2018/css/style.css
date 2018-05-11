@@ -1,0 +1,391 @@
+body {
+	padding: 54px 0 0 0;
+	margin: 0;
+	background: #f9f9f9;
+	font-size: 14px;
+	color: #000;
+	font-family: "Regular", calibri, arial;
+}
+
+.content {
+	margin: auto;
+	width: 900px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+#menu, #sidebar {
+	display: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+	display: inline-block;
+	margin: 0 0 0 22px;
+	font-size: 16px;
+	min-width: 700px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+header .header-logo {
+	display: inline-block;
+	max-height: 50px;
+	vertical-align: middle;
+}
+
+header nav a {
+	display: inline-block;
+	text-align: center;
+	padding: 18px 0;
+	width: 90px;
+	color: #000;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	color: #1EC7D7;
+}
+
+header nav a.active {
+	color: #1EC7D7;
+	cursor: default;
+}
+
+header nav a.right {
+	float: right;
+}
+
+label {
+	font-family: "Bold";
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+	margin: 2px 0;
+	width: 220px;
+	border: none;
+	background: #fff;
+	padding: 6px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+	width: 323px;
+	min-height: 100px;
+	resize: vertical;
+}
+
+input[type="submit"], button {
+	margin: 2px 0;
+	padding: 10px 22px;
+	background: #1EC7D7;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+select {
+	margin: 4px 0;
+	padding: 4px;
+	background: #fff;
+	color: #000;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
+select.selectpicker {
+	display: inline-block;
+	padding: 8px 6px;
+	margin: 0 0 0 16px;
+	border: none;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+	vertical-align: middle;
+}
+
+form#contact {
+	width: 324px;
+	margin: auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+form input[type="submit"] {
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+form#contact input[type="submit"] {
+	box-shadow: none;
+	width: 100%;
+}
+
+#opacity {
+	display: none;
+	position: fixed;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#opacity .opacity-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#opacity .opacity-content-popup {
+	position: relative;
+	display: block;
+	margin: auto;
+	padding: 10px;
+	background: #fff;
+	width: 700px;
+	text-align: left;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#opacity .opacity-content-popup .opacity-content-popup-close {
+	position: absolute;
+	padding: 16px;
+	right: 0px;
+	top: -8px;
+	font-size: 24px;
+	color: #666;
+	font-weight: normal;
+	font-family: "Bold";
+	cursor: pointer;
+}
+
+#opacity .opacity-content-popup .opacity-content-popup-close:before {
+	content: "X";
+}
+
+#opacity .opacity-content-popup .opacity-content-popup-close:hover {
+	color: #000;
+}
+
+#opacity .opacity-content h3 {
+	padding: 0;
+	margin: 0 0 6px 0;
+	font-size: 22px;
+	font-family: "Light";
+	font-weight: normal;
+}
+
+#opacity .opacity-content img {
+	max-width: 50%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+#opacity .opacity-content .infos {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px;
+}
+
+#opacity .opacity-content b {
+	display: inline-block;
+	margin: 4px 0;
+	min-width: 120px;
+	font-family: "Bold";
+	font-weight: normal;
+}
+
+#cover {
+	display: table;
+	background: #64BBFE;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	height: 190px;
+	width: 100%;
+	text-align: center;
+}
+
+#cover .cover-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#cover .cover-content h2, #cover .cover-content h3 {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-weight: normal;
+	font-family: "Regular";
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#cover .cover-content h2 {
+	font-size: 60px;
+}
+
+#cover .cover-content h3 {
+	margin: 10px 0 0 0;
+	font-size: 30px;
+}
+
+table {
+	margin: 16px 0 0 0;
+	width: 100%;
+	border-collapse: collapse;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+table tr th, table tr td {
+	background: #fff;
+}
+
+table tr th {
+	padding: 6px 0;
+	font-size: 16px;
+	text-align: center;
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	font-weight: normal;
+	font-family: "Bold";
+	color: #333;
+}
+
+table tr td {
+	text-align: center;
+	padding: 10px;
+	border-left: 1px solid #eee;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 28px;
+	font-family: "Light";
+	font-weight: normal;
+}
+
+h2 {
+	padding: 2px 0;
+	margin: 2px 0;
+	font-size: 26px;
+	font-family: "Regular";
+	font-weight: normal;
+}
+
+.content.white h1, .content.white h2 {
+	margin: 10px 0;
+	color: #fff;
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content.white h1 {
+	font-family: "Regular";
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+.content.white h2 {
+	font-family: "Light";
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.content.white form {
+	text-align: center;
+}
+
+.content.white input[type="submit"] {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.logements {
+	margin: 18px 0 0 0;
+	text-align: center;
+}
+
+.logements h2 {
+	margin: 0 0 15px 0;
+}
+
+.logement {
+	padding: 0 10px 0 0;
+	display: inline-block;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.logement:hover {
+	opacity: 1;
+}
+
+.logement img {
+	width: 160px;
+	height: 160px;
+	border-radius: 2px;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: #64BBFE;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	height: 227px;
+}
+
+.error {
+	padding: 4px;
+	margin: 2px 0;
+	background: red;
+	color: #fff;
+	width: 667px;
+}
+
+.success {
+	padding: 4px;
+	margin: 2px 0;
+	background: green;
+	color: #fff;
+	width: 667px;
+}
+
+footer {
+	font-family: "Light";
+	margin: 30px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+}
+
+footer a {
+	color: #666;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #1EC7D7;
+}
